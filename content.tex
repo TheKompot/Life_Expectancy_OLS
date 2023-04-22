@@ -15,7 +15,10 @@ Následne sme vyhodili všetky riadky, kde chýbali údaje. Zostala nám tabuľk
 \section*{Lineárny model}
 Priemernú dĺžku života sme sa rozhodli modelovať nasledovne:
 \[
-    Life.expectancy = \beta_0 + \beta_1*Alcohol + \beta_2*BMI + \beta_3*GDP + \beta_4*Total.expenditure + \beta_5*Schooling + \varepsilon
+    \begin{array}{c}
+    Life.expectancy =\\
+     \beta_0 + \beta_1*Alcohol + \beta_2*BMI + \beta_3*GDP + \beta_4*Total.expenditure + \beta_5*Schooling + \varepsilon
+    \end{array}
 \]  
 Definujeme si maticu $X$, ktorá bude mať prvý stĺpec jednotky a ostatné stĺpce budú vektory jednotlivých
 vysvetlujúcich premenných. Potom odhad vektora $\beta$ je nasledovný:
