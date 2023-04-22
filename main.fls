@@ -1,8 +1,8 @@
-PWD /Users/rudo/Desktop/ekonometria
+PWD /Users/rudo/Desktop/ekonometria/projekt
 INPUT /usr/local/texlive/2022/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/rudo/Desktop/ekonometria/main.tex
+INPUT /Users/rudo/Desktop/ekonometria/projekt/main.tex
 OUTPUT main.log
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/scrbook.cls
 INPUT /usr/local/texlive/2022/texmf-dist/tex/latex/koma-script/scrbook.cls
