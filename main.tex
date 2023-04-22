@@ -1,0 +1,34 @@
+\documentclass[12pt,letterpaper,oneside]{scrbook}
+
+%spravne nastavenie okrajov
+\usepackage[a4paper,top=2.5cm,bottom=2.5cm,left=3.5cm,right=2cm]{geometry}
+%zapnutie fontov pre UTF8 kodovanie
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+%zapnutie slovenskeho delenia slov
+%a automatickych nadpisov ako Obsah, Obrázok a pod. v slovencine
+\usepackage[slovak]{babel}
+
+%nastavenie riadkovania podla smernice
+\linespread{1.25} % hodnota 1.25 by mala zodpovedat 1.5 riadkovaniu
+
+% balicek na vkladanie zdrojoveho kodu
+\usepackage{listings}
+\usepackage{amsmath}
+\usepackage{mathabx}
+
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+\subject{Štatistické Metódy - Záverečný Projekt}
+\title{Zemetrasenia blízko Fiji}
+\author{Rudolf Nosek, 3DAV}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\input{content.tex}
+\end{document}
