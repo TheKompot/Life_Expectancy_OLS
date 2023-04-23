@@ -21,13 +21,13 @@ Priemernú dĺžku života sme sa rozhodli modelovať nasledovne:
     \end{array}
 \]  
 Definujeme si maticu $X$, ktorá bude mať prvý stĺpec jednotky a ostatné stĺpce budú vektory jednotlivých
-vysvetlujúcich premenných. Potom odhad vektora $\beta$ je nasledovný:
+vysvetľujúcich premenných. Potom odhad vektora $\beta$ je nasledovný:
 \[
     \hat{\beta} = (X^TX)^{-1}X^TY  
 \]
 kde vektor $Y$ je vektor hodnôt vysvetľovanej premennej. Po odhade koeficientov nám softvér R ukázal aj p-hodnoty pre test signifikancie jednotlivých vysvetľujúcich premenných.
 Premenná \textit{Total.expenditure} nám vyšla nedostatočne signifikantná, preto ju z modelu odstránime. Nebudeme sa podrobnejšie zaoberať metódou, ako sme prišli k danému záveru, kedže to nie je cieľom projektu.
-Pre lepšiu interpretáciu koeficientov transformujeme niektoré vysvetlujúce premenné. Výsledný model je teda nasledovný:
+Pre lepšiu interpretáciu koeficientov transformujeme niektoré vysvetľujúce premenné. Výsledný model je teda nasledovný:
 \[
     \begin{array}{c}
     Life.expectancy = \\
@@ -52,7 +52,7 @@ Počíta sa nasledovne:
     R^2 = 1 - \frac{RSS}{TSS}  
 \]
 kde $RSS$ je suma štvorcov reziduí a $TSS$ je suma štvorcov odchyliek závislej premennej od jej priemeru.
-Existuje aj upravený koeficient determinácie, ktorý berie do úvahy počet vysvetlujúcich premennych.
+Existuje aj upravený koeficient determinácie, ktorý berie do úvahy počet vysvetľujúcich premenných.
 \[
   \overline{R^2} = 1 - \frac{RSS/(n-k)}{TSS/(n-1)}  
 \]
@@ -90,12 +90,12 @@ Testovú štatistiku vypočítame nasledovne:
     F = \frac{[R\hat{\beta}-r]^T[R(X^TX)^{-1}R^T]^{-1}[R\hat{\beta}-r]}{qs^2}
 \]
 kde $q$ je počet testovaných podmienok (v našom prípade 4). Pre náš model $F=930.1728$.
-Tuto štatistiku keď porovnáme s 95\%-ným kvantylom Fisherovho rozdelenia so stupňami voľnosti $q$ a $n-k$ tak zistíme,
+Túto štatistiku keď porovnáme s 95\%-ným kvantilom Fisherovho rozdelenia so stupňami voľnosti $q$ a $n-k$ tak zistíme,
 že naša štatistika je väčšia a preto \textbf{zamietame} nulovú hypotézu.
 
 \section*{Chow breakpoint test}
-Jedna z nespomínaných premenných v pôvodnom datasete je premennea \textit{Status}, ktorá rozdeľuje dáta podľa toho či je krajina vyspelá alebo rozvojová.
-Formálne si vytvoríme dva lineárne modeli, jeden pre vyspelé a druhý pre rozvojové krajiny. Chceme testovať či sa ich koeficienty rovnajú.
+Jedna z nespomínaných premenných v pôvodnom datasete je premenná \textit{Status}, ktorá rozdeľuje dáta podľa toho či je krajina vyspelá alebo rozvojová.
+Formálne si vytvoríme dva lineárne modely, jeden pre vyspelé a druhý pre rozvojové krajiny. Chceme testovať či sa ich koeficienty rovnajú.
 Dva spomínané modely spojíme do jedného:
 \[
     \begin{bmatrix}
@@ -134,13 +134,13 @@ maticovo:
     r = 0_k
     \quad
 \]
-$k$ je počet parametrov pôvodného modelu. Použijeme rovnakú testovú štatistiku ako v predchádzajúcej úlohe len tento krát ju 
+$k$ je počet parametrov pôvodného modelu. Použijeme rovnakú testovú štatistiku ako v predchádzajúcej úlohe len tentokrát ju 
 porovnáme s 95\%-tným kvantilom Fisherovho rozdelenia so stupňami voľnosti $k$ a $n-2k$. Testová štatistika (45.46596) je väčšia ako spomínaný kvantil (2.217991)
 preto nulovú hypotézu \textbf{zamietame}.
 
 \section*{Záver}
 V prvom rade sme vytvorili model a interpretovali jeho koeficienty. Očakávali sme zápornú závislosť medzi BMI a závislou premennou ale model
 nám tvrdí opak, náš odhad prečo to tak je, pretože vo väčšine krajinách stále nie je hlavný problém obezita ale naopak podvýživa. Ďalej nás prekvapila nízka signifikancia premennej \textit{Total.expenditure}.
-Ukázali sme si ako zistiť rozptyl nevysvetlený modelom a následne ako vypočítať pomer rozptylu vysvetlený modelom (koeficient determinácie). Testovali sme význam regresie, pomocou ktorého sme sa ujistili, že regresia má v našom 
+Ukázali sme si ako zistiť rozptyl nevysvetlený modelom a následne ako vypočítať pomer rozptylu vysvetlený modelom (koeficient determinácie). Testovali sme význam regresie, pomocou ktorého sme sa uistili, že regresia má v našom 
 prípade význam. V posledom rade sme chceli vedieť či sa koeficienty líšia pre vyspelé krajiny od rozvojových. Výsledok testu ukázal, že koeficienty sú naozaj rozdielne, čo znamená, že
-ak zvýšíme nejakú vysvelujúcu premennú o 1, tak sa v rozvojových krajinách inak zmení priemerná dĺžka života ako vo vyspelých.
+ak zvýšíme nejakú vysvetľujúcu premennú o 1, tak sa v rozvojových krajinách inak zmení priemerná dĺžka života ako vo vyspelých.
