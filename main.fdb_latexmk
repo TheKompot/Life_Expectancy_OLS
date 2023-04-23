@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1682260690 "/Users/rudo/Desktop/ekonometria/projekt/main.tex" "main.pdf" "main" 1682260690
+["pdflatex"] 1682278195 "/Users/rudo/Desktop/ekonometria/projekt/main.tex" "main.pdf" "main" 1682278195
   "/Users/rudo/Desktop/ekonometria/projekt/main.tex" 1682207444 798 0865ae89c9fa837555ed364eb46c332e ""
   "/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -85,8 +85,8 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1670277292 2826441 cab3f8ded7918166112bdd84dc83ba7f ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "content.tex" 1682260690 7531 93ea85dac73509c04ab160f51929aaab ""
-  "main.aux" 1682260690 227 ae8a04e0d9644645f58080d459926f76 "pdflatex"
+  "content.tex" 1682278194 7545 c7d7096eb8e00750dfdfed5aea19286b ""
+  "main.aux" 1682278195 227 ae8a04e0d9644645f58080d459926f76 "pdflatex"
   "main.tex" 1682207444 798 0865ae89c9fa837555ed364eb46c332e ""
   (generated)
   "main.aux"
